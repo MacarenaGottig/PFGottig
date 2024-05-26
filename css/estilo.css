@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Freeman", sans-serif;
+    font-size: 16px;
+    color:#DF2C80; 
+}
+
+.titulo {
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+}
+
+/* Header -> fijo */
+header {
+    height: auto;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}
+
+.header_h {
+    display: inline;
+}
+
+.brand-section {
+    background-color: #DF2C80;
+}
+
+.brand-title {
+    color: white;
+}
+
+.brand-second {
+    color: #511E16;
+    /* display: block; */
+}
+
+nav {
+    background-color: #DF2C80;
+}
+
+.nav-div {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+}
+
+
+.ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.a {
+    text-decoration: none;
+}
+
+/* CAMBIAR NOMBRESSSSS */
+.li {
+    border: 1px white solid;
+    background-color:#FBE6F8;
+    margin: 5px;
+    padding: 4px;
+    text-align: center;
+}
+
+.nav-ul-li-a {
+    color:#DF2C80;
+}
+
+.menu a:hover {
+    background-color:#DF2C80;
+    color:#FBE6F8;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+
+.banner {
+    background-color: #62C3FE;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.banner-texto{
+    
+    font-weight: 900;
+    font-style: bold;
+    color:white;
+}
+
+.banner-img {
+    height: 500px;
+    width: 1431px;
+    position: relative;
+}
+
+.banner-container{
+    position: absolute;
+    top: 410px;
+    left: 2%;
+    right: 2%;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.banner-button {
+    color: white;
+    background-color: #511E16;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.subtitulo{
+    margin: 30px;
+    
+    font-size: 28px;
+    font-weight: 900;
+    text-align: center;
+    color: #DF2C80;
+    
+}
+
+.subtitulo-section {
+    font-size: 28px;
+    background-color: #DF2C80;
+    text-align: start;
+    color: white;
+    margin: 2px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+
+
+
+.main-section {
+    margin: 20px;
+}
+
+.articles-flex {
+    display: flex;
+    flex-flow: row wrap;
+    /* gap: 100px; ESPACIO FILAS Y COLUMNAS CHEQUEAR POR QUE NO FUNCIONA */
+    /* margin-top: ; */
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.article{
+    margin-bottom: 10px;
+}
+
+footer{
+    padding:10px;
+    font-style: italic;
+    background-color:#FBE6F8;
+    border-top: 1px #DF2C80 solid;
+}
+
+.footer-nav{
+    background-color:#FBE6F8;
+}
+
+.footer-ul-li-a {
+    color:#DF2C80
+}
+
+
+.contact-info-section{
+    background-color: #FBE6F8;
+    border: 1px  #DF2C80 solid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+}
+
+.contact-details{
+    width: 100%;
+    padding:10px;
+}
+
+.location-map{
+    width: 100%;
+    padding: 10px;
+}
+
+.contact-form-section{
+    background-color: #FBE6F8;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px  #DF2C80 solid;
+}
+
+
+.accordion{
+    border:1px #DF2C80 solid;
+}
+
+.accordion-body{
+    color:#511E16;
+}
+
+.form-button{
+    color:white;
+    background-color: #511E16;
+    padding:8px;
+ 
+
+}
+
+
+
+
+
+
+
+@media (min-width:768px) {
+    .titulo{
+        font-size: 36px;
+    }
+
+    .subtitulo{
+        font-size: 32px ;
+    }
+
+    .brand-section {
+        text-align: center;
+    }
+
+    .li {
+        padding: 0px;
+        display: inline;
+        border: 0px;
+        margin: 10px;
+    }
+
+    nav {
+        background-color:#FBE6F8;
+    }
+
+    .banner {
+        padding-top: 40px;
+    }
+
+    .banner-container{
+        top: 12%;
+        right: 2%;
+    }
+
+    .banner-button {
+        padding: 10px;
+        margin: 2px;
+    }
+
+    .ul {
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .nav-ul-li-a{
+        font-size: 18px;
+    }
+
+    .articles-flex {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    footer{
+        padding: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display:flex;
+        flex-direction: row;
+        flex-wrap:nowrap;
+        justify-content: space-between;
+
+    }
+
+    .subtitulo-section{
+        font-size: 32px;
+        
+    }
+
+    .contact-info-section{
+        
+        flex-direction: row;
+        flex-wrap: nowrap;
+      
+    }
+
+}
+
+@media (min-width:1024px) {
+
+    /* AGREGAR A MODO TABLET */
+
+    .nav-ul-li-a{
+        font-size: 20px;
+    }
+  
+    .banner-button {
+        font-size: 20px;
+    }
+
+    .titulo {
+        font-size: 48px;
+    }
+
+    .subtitulo{
+        font-size: 40px;
+    }
+
+    .li{
+        margin:20px;
+    }
+
+    .banner-container{
+        top: 15%;
+        right: 3%;
+    }
+
+   
+}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS personal -->
+    <link rel="stylesheet" href="./css/estilo.css">
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Icono -->
+    <link rel="shortcut icon" href="./img/dulce.png">
+    <!-- Tipografía -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
+
+    <title>Biba Donuts</title>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Nav para Mobile -->
+        <nav class="navbar d-md-none">
+
+            <div class="container-fluid ">
+
+                <!-- Logo Marca -->
+                <div class="brand-section">
+                    <a href="./index.html" class="a brand-title">
+                        <h1 class="titulo header_h">Biba</h1>
+                        <h2 class="titulo brand-second header_h">Donuts</h2>
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Enlaces -->
+                <!-- cambiar nombre nav-div -->
+                <div class="collapse navbar-collapse nav-div" id="navbarSupportedContent">
+                    <nav>
+                        <ul class="ul navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="li"><a href="./index.html" class="a nav-ul-li-a">Inicio</a></li>
+                            <li class="li"><a href="./pages/productos.html" class="a nav-ul-li-a ">Productos</a></li>
+                            <li class="li"><a href="./pages/quienesSomos.html" class="a nav-ul-li-a">¿Quienes somos?</a>
+                            </li>
+                            <li class="li"><a href="./pages/preguntasFrecuentes.html" class="a nav-ul-li-a">Preguntas
+                                    frecuentes</a></li>
+                            <li class="li"><a href="./pages/Contacto.html" class="a nav-ul-li-a">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </nav>
+
+
+        <!-- Nav para Tablet/Desktop -->
+
+        <div class="d-none d-md-block">
+
+            <!-- Logo Marca -->
+            <div class="brand-section">
+                <a href="./index.html" class="a brand-title">
+                    <h1 class="titulo header_h">Biba</h1>
+                    <h2 class="titulo brand-second header_h">Donuts</h2>
+                </a>
+            </div>
+
+            <!-- Enlaces -->
+            <nav class="menu">
+                <ul class="ul">
+                    <li class="li"><a href="./index.html" class="a nav-ul-li-a">Inicio</a></li>
+                    <li class="li"><a href="./pages/productos.html" class="a nav-ul-li-a ">Productos</a></li>
+                    <li class="li"><a href="./pages/quienesSomos.html" class="a nav-ul-li-a">¿Quienes somos?</a></li>
+                    <li class="li"><a href="./pages/preguntasFrecuentes.html" class="a nav-ul-li-a">Preguntas
+                            frecuentes</a></li>
+                    <li class="li"><a href="./pages/Contacto.html" class="a nav-ul-li-a">Contacto</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- Banner -->
+        <div class="banner">
+
+
+            <img src="./img/DoeDoughnuts_about_wheretonow_n_1_1_1920x.webp" class="banner-img" alt="Imagen de donas">
+
+            <!-- Mobile texto y boton centrados-->
+            <div class="banner-container">
+                <h1 class="titulo text-center d-block d-md-none banner-texto"> SUMÉRGETE EN UN MUNDO DE DULZURA. </h1>
+                <a class="a" href="./pages/productos.html">
+                    <button type="button" class="banner-button rounded-pill d-block d-md-none">Comprar
+                        ahora</button></a>
+            </div>
+
+            <!-- Desktop texto y boton a la izquierda -->
+            <div class="banner-container">
+                <h1 class="titulo text-end d-none d-md-block banner-texto "> SUMÉRGETE EN UN MUNDO DE DULZURA.</h1>
+                <a class="a" href="./pages/productos.html">
+                    <button type="button" class="banner-button rounded-pill d-none d-md-block ms-auto">Comprar
+                        ahora</button></a>
+            </div>
+
+
+        </div>
+
+        <!-- Artículo de interés -->
+        <section class="main-section">
+            <h2 class="subtitulo-section">Productos destacados</h2>
+
+            <!-- Contenedor de artículos -->
+            <div class="articles-flex">
+
+                <section class="text-center mb-5">
+                    <div class="row gx-4 .gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content">
+
+                        <!-- Artículo 1 -->
+                        <div class="col article">
+
+                            <div class="card h-100">
+                                <img src="./img/DOE-Rerro-Rocher.webp" class="card-img-top" alt="Producto">
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <h5 class="fw-bolder">DOE-RERRO ROCHER</h5>
+                                        <span>$1800</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <a href="" class="btn btn-outline-success mt-auto">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Artículo 2 -->
+                        <div class="col article">
+
+                            <div class="card h-100">
+                                <img src="./img/Creme-Brulee.webp" class="card-img-top" alt="Producto">
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <h5 class="fw-bolder">CREME BRULEE</h5>
+                                        <span>$1200</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <a href="" class="btn btn-outline-success mt-auto">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Artículo 3 -->
+                        <div class="col article">
+
+                            <div class="card h-100">
+                                <img src="./img/DOE-Donuts--Core-Flavour--Tiramisu.webp" class="card-img-top"
+                                    alt="Producto">
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <h5 class="fw-bolder">TIRAMISU</h5>
+                                        <span>$900</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <a href="" class="btn btn-outline-success mt-auto">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Artículo 4 -->
+                        <div class="col article">
+
+                            <div class="card h-100">
+                                <img src="./img/DOE-Donuts--Core-Flavour--Jam-and-Cream.webp" class="card-img-top"
+                                    alt="Producto">
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <h5 class="fw-bolder">MERMELADA Y CREMA</h5>
+                                        <span>$2000</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <a href="" class="btn btn-outline-success mt-auto">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+    <footer>
+
+        <!-- Informacion de contacto -->
+        <div class="contact-info">
+            <div><strong>Dirección:</strong> Av. del Mar 3, B7167 Pinamar, Provincia de Buenos Aires, Argentina</div>
+            <div><strong>Teléfono:</strong> +54 (9) 11 2345-6789</div>
+            <div><strong>Email:</strong> contacto@bibadonuts.com</div>
+        </div>
+
+        <div class="d-none d-md-block">
+            <span>&copy; 2024 Biba, Inc </span>
+            <a href="#" class="a footer-ul-li-a">| Políticas de Privacidad y Cookies</a>
+        </div>
+
+        <!-- Mapa del sitio -->
+        <div class="map-site">
+            <strong>Mapa del sitio:</strong>
+            <nav class="footer-nav ">
+                <ul class="ul text-start">
+                    <li class="footer-li"><a href="./index.html" class="a footer-ul-li-a">Inicio</a></li>
+                    <li class="footer-li"><a href="./pages/productos.html" class="a footer-ul-li-a ">Productos</a></li>
+                    <li class="footer-li"><a href="./pages/quienesSomos.html" class="a footer-ul-li-a">¿Quienes
+                            somos?</a></li>
+                    <li class="footer-li"><a href="./pages/preguntasFrecuentes.html" class="a footer-ul-li-a">Preguntas
+                            frecuentes</a></li>
+                    <li class="footer-li"><a href="./pages/Contacto.html" class="a footer-ul-li-a">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="d-block d-md-none">
+            <span>&copy; 2024 Biba, Inc </span>
+            <a href="#" class="a footer-ul-li-a">| Políticas de Privacidad y Cookies</a>
+        </div>
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
