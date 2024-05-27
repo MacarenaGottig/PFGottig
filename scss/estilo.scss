@@ -1,0 +1,628 @@
+/* Definición de variables */
+$primary-color: #DF2C80;
+$secondary-color: #511E16;
+$font-stack: "Freeman", sans-serif;
+$base-font-size: 16px;
+
+// Mixins 
+@mixin fondo-claro {
+    background-color: #FBE6F8;
+}
+
+@mixin no-decoration {
+    text-decoration: none;
+}
+
+@mixin titulo {
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+}
+
+@mixin subtitulo {
+    margin: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: $primary-color;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 200;
+    font-family: $font-stack;
+    font-size: $base-font-size;
+    color: $primary-color;
+}
+
+h2 {
+    @include subtitulo;
+}
+
+// Header fijo
+header {
+    height: auto;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+    background-color: $primary-color;
+}
+
+// Nombre de la marca
+.div-brand {
+
+    background-color: $primary-color;
+
+    .brand {
+        @include no-decoration;
+    }
+
+    .brand-first {
+        color: white;
+        display: inline;
+        @include titulo;
+    }
+
+    .brand-second {
+        color: $secondary-color;
+        display: inline;
+        @include titulo;
+    }
+}
+
+// Barra nav
+nav {
+
+    background-color: $primary-color;
+
+    .div-nav {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0px;
+
+        li {
+            border: 1px white solid;
+            @include fondo-claro;
+            margin: 5px;
+            padding: 4px;
+            text-align: center;
+
+            a {
+                @include no-decoration;
+                color: $primary-color;
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+// Publicidad página principal
+.banner {
+
+    background-color: #62C3FE;
+    overflow: hidden;
+    padding-top: 20px;
+
+    img {
+        height: 500px;
+        width: 1431px;
+        position: relative;
+    }
+
+    div {
+        position: absolute;
+        top: 410px;
+        left: 2%;
+        right: 2%;
+        padding: 20px;
+        border-radius: 5px;
+        z-index: 2;
+
+        h2 {
+            @include titulo;
+            font-weight: 900;
+            font-style: bold;
+            color: white;
+            text-align: center;
+            margin: 0px;
+        }
+
+        a {
+            @include no-decoration;
+            display: block;
+            text-align: center;
+
+            button {
+                color: white;
+                background-color: $secondary-color;
+                margin: 0 auto;
+                padding: 8px;
+            }
+        }
+
+
+    }
+
+
+
+
+}
+
+// Main pagina principal
+.main-index {
+
+    section {
+        margin: 5px;
+        margin-top: 15px;
+
+        h3 {
+            font-size: 28px;
+            background-color: $primary-color;
+            text-align: start;
+            color: white;
+            padding: 10px;
+        }
+
+    }
+}
+
+// Contenedor de artículos
+.articles-flex {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2px;
+    margin-right: 2px;
+
+    section {
+        text-align: center;
+
+        .article {
+            margin-bottom: 10px;
+        }
+
+
+    }
+}
+
+// Pie de página
+footer {
+
+    padding: 10px;
+    font-style: italic;
+    @include fondo-claro;
+    border-top: 1px $primary-color solid;
+
+    div a {
+        @include no-decoration;
+        color: $primary-color;
+    }
+
+    div.map-site {
+
+
+        nav {
+
+            @include fondo-claro;
+
+            ul {
+                list-style-type: none;
+                margin: 0px;
+
+                li {
+                    border: 0px;
+                    text-align: start;
+                    margin: 0px;
+                    padding: 0px;
+
+                    a {
+                        @include no-decoration;
+                        color: $primary-color;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Main página Productos
+.main-productos {
+
+    margin-top: 20px;
+
+    section {
+        margin: 10px;
+
+        .articles-flex {
+            .article {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+// Botón de formulario
+.form-button {
+    background-color: #511E16;
+    color: white;
+    padding: 5px;
+}
+
+// Main página Preguntas frecuentes
+.main-preguntasFrecuentes {
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    section {
+        margin: 20px;
+    }
+
+    .accordion {
+        border: 0px;
+
+        .accordion-item {
+            @include fondo-claro;
+
+            button.accordion-button {
+                color: $primary-color;
+                font-weight: 300px;
+                @include fondo-claro;
+                border: 1px #DF2C80 solid;
+            }
+        }
+
+    }
+}
+
+// Main página Quienes somos
+.main-quienessomos {
+
+    overflow: hidden;
+
+    div.flex-container {
+
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px;
+
+        div{
+            margin: 10px;
+        }
+
+        
+
+        p {
+            @include fondo-claro;
+            border: 1px #DF2C80 solid;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        img {
+            width:100%;
+            height: auto;
+        }
+    }
+
+    img{
+        background: linear-gradient(to top, #E4BD07, #FFFFFF);
+        width: auto;
+        height: 70vh;
+    }
+}
+
+// Main página de contacto
+.main-contact {
+    margin: 20px 10px 20px 10px;
+
+    section.contact-section {
+        @include fondo-claro;
+        border: 1px $primary-color solid;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .contact-details,
+        .location-map {
+            width: 100%;
+            padding: 10px;
+        }
+
+    }
+
+    .contact-section-form {
+        @include fondo-claro;
+        padding: 10px;
+        margin-bottom: 30px;
+        border: 1px $primary-color solid;
+    }
+
+    button.form-button {
+        color: white;
+        background-color: $secondary-color;
+        padding: 8px;
+    }
+}
+
+// Version tablet
+@media (min-width: 768px) {
+
+    $base-font-size: 18px;
+
+    * {
+        font-size: $base-font-size;
+    }
+
+    @mixin titulo {
+        font-size: 36px;
+    }
+
+    @mixin subtitulo {
+        font-size: 34px;
+    }
+
+    .hover {
+        a:hover {
+            background-color: $primary-color;
+            color: #FBE6F8;
+            padding-top: 2px;
+            padding-bottom: 2px;
+
+        }
+    }
+
+    .div-brand {
+        text-align: center;
+
+        .brand-first {
+            @include titulo;
+        }
+
+        .brand-second {
+            @include titulo;
+        }
+    }
+
+    nav {
+
+        text-align: center;
+        @include fondo-claro;
+
+        ul {
+            border-bottom: 1px $primary-color solid;
+
+            li {
+                padding: 0px;
+                display: inline;
+                border: 0px;
+                margin: 10px;
+
+                a {
+                    font-size: 18px;
+                    padding: 0px 5px 0px 5px;
+                }
+
+            }
+        }
+
+
+    }
+
+    .banner {
+        padding-top: 60px;
+        margin-top: -18px;
+
+        div {
+
+            top: 10%;
+            left: 0;
+            right: 2%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            h2 {
+                @include titulo;
+                text-align: end;
+            }
+
+            a {
+
+                button {
+                    margin-left: auto;
+                    margin-right: 0;
+                    padding: 10px;
+                }
+            }
+
+
+        }
+
+
+
+
+    }
+
+    .articles-flex {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    footer {
+
+        padding: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        div.map-site {
+            min-width: 150px;
+
+            ul {
+                border: 0px;
+
+                li {
+                    display: block;
+                    margin: 0px;
+
+                    a {
+                        font-size: $base-font-size;
+                        padding: 0px;
+                    }
+                }
+
+
+            }
+
+
+        }
+    }
+
+    .main-preguntasFrecuentes {
+        margin: 30px;
+    }
+
+
+    .main-quienessomos {
+        img{
+            background: linear-gradient(to top, #E4BD07, #FFFFFF);
+            height: 100vh;
+        }
+    }
+
+    .main-contacto {
+        margin: 20px;
+    }
+
+    .main-contact {
+
+        margin: 30px;
+
+        section.contact-section {
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            div {
+                border: 1px #DF2C80 solid;
+            }
+        }
+
+    }
+
+}
+
+// Versión desktop
+@media (min-width: 1024px) {
+
+    $base-font-size: 20px;
+
+    * {
+        font-size: $base-font-size;
+    }
+
+    @mixin titulo {
+        font-size: 48px;
+    }
+
+    @mixin subtitulo {
+        font-size: 42px;
+    }
+
+    .div-brand {
+        .brand-first {
+            @include titulo;
+        }
+
+        .brand-second {
+            @include titulo;
+        }
+    }
+
+    nav {
+        ul {
+            li {
+                a {
+                    font-size: 20px;
+                    padding: 0px 10px 0px 10px;
+                }
+
+            }
+        }
+
+
+    }
+
+    .banner {
+        margin-top: -20px;
+
+        div {
+            top: 15%;
+            right: 3%;
+
+            h2 {
+                @include titulo;
+            }
+        }
+    }
+
+    h2 {
+        @include subtitulo;
+    }
+
+    .main-preguntasFrecuentes {
+        margin: 50px;
+        margin-top: 20px;
+    }
+
+
+    .main-quienessomos {
+
+        div.flex-container {
+            padding: 20px;
+            div{
+                margin: 20px;
+            }
+        }
+    
+        img{
+            background: linear-gradient(to top, #E4BD07, #FFFFFF);
+            width: auto;
+            height: 150vh;
+        }
+    }
+
+    .main-contact {
+
+        margin: 40px;
+        margin-top: 20px;
+
+        section.contact-section {
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            div {
+                border: 1px #DF2C80 solid;
+            }
+        }
+
+    }
+
+}
